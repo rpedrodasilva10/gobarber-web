@@ -38,7 +38,7 @@ const SignUp: React.FC = () => {
 
       const { email, name, password } = data;
 
-      const response = await api.post('/users', {
+      await api.post('/users', {
         name,
         email,
         password,
